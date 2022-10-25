@@ -49,16 +49,22 @@
 
 /* ---------final tela login-------- */
 
-#cadastro{
+.form-cadastro {
     background-color: #212529;
+}
+
+#cadastro{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding: 10px;
-    gap: 15px;
+    gap: 10px;
     width: 1000px;
     height: 200px;
     margin: 70px 20px 0 20px;
-    background-color: #212529;
+}
+
+.btn-c{
+    text-align: center;
 }
 
 .cadastro-input{

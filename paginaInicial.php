@@ -60,7 +60,8 @@
                 <div id="s-estoque">
                     <h2>Estoque e Serviços</h2>
                 </div>
-                <div id="cadastro">
+                <form class="form-cadastro" action="backend/adicionar_produto.php" method="post">
+                  <div id="cadastro">
                     <div>
                         <label for="produto">Produto</label>
                         <input class="cadastro-input" type="text" id="produto" name="produto">
@@ -77,7 +78,14 @@
                         <label for="estoque">Estoque</label>
                         <input class="cadastro-input" type="text" id="estoque" name="estoque">
                     </div>
-                </div>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary mb-3">Cadastrar</button>
+                  </div>
+                </form>
+                
+                
                 <div id="tabela-div">
                     <div id="tabela-">
                     <table class="table table-dark table-stripeds">
