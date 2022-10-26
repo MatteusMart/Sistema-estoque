@@ -6,7 +6,7 @@
 }
 
 #container{
-    height: 620px;
+    height: auto;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -90,6 +90,7 @@
 }
 
 #menu-esquerdo{
+    height: auto;
     background-color: #4bcfa3;
     padding: 20px;
     gap: 20px;
