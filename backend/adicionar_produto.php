@@ -8,8 +8,9 @@
         $categoria = $_POST['categoria'];
         $fornecedor = $_POST['fornecedor'];
         $estoque = $_POST['estoque'];
+        $codigo = $_POST['codigo'];
 
-        $sql = "INSERT INTO tb_produtos (`produto`,`categoria`,`fornecedor`,`estoque`) VALUES ('$produto','$categoria','$fornecedor','$estoque')";
+        $sql = "INSERT INTO tb_produtos (`produto`,`categoria`,`fornecedor`,`estoque`,`codigo`) VALUES ('$produto','$categoria','$fornecedor','$estoque','$codigo')";
 
         $msg = 'Produto adicionado com sucesso';
 

@@ -55,8 +55,7 @@
                 
                 <button type="button" class="btn btn-success mb-4 w-100 border-top-2">Home</button>
                 <button type="button" class="btn btn-success  mb-4 w-100">Cadastro de itens</button>
-                <button type="button" class="btn btn-success  mb-4 w-100">Listagem</button>
-                <button type="button" class="btn btn-success  mb-4 w-100">sdwdwdsdsd</button>
+                <button type="button" class="btn btn-success  mb-4 w-100" ><a href="#tabela-div"> Listagem</a></button>
             </aside>
             <div id="corpo">
                 <div id="s-estoque">

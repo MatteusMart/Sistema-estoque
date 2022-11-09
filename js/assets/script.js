@@ -61,9 +61,8 @@ const listProduct = () => {
                   </div>
                 </td>
                 <td class="text-center">
-                  <button type="button" class="btn btn-sm btn-primary   w-30" onclick="listUserID(${produto.id})">Entrada</i></button>
-                  <button type="button" class="btn btn-sm btn-primary  w-30"><i class="bi bi-trash" onclick="deleteUser(${produto.id})">Saida</i></button>
-                  <button type="button" class="btn btn-sm btn-danger  w-30"><i class="bi bi-trash" onclick="deleteUser(${produto.id})">Alterar</i></button>
+                  <button type="button" class="btn btn-sm btn-primary   w-10" onclick="listUserID(${produto.id})">Entrada</i></button>
+                  <button type="button" class="btn btn-sm btn-primary  w-10"><i class="bi bi-trash" onclick="deleteUser(${produto.id})">Saida</i></button>
                 </td>
               </tr>
               `)
