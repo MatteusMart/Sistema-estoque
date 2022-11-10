@@ -61,8 +61,7 @@ const listProduct = () => {
                   </div>
                 </td>
                 <td class="text-center">
-                  <button type="button" class="btn btn-sm btn-primary   w-10" onclick="listUserID(${produto.id})">Entrada</i></button>
-                  <button type="button" class="btn btn-sm btn-primary  w-10"><i class="bi bi-trash" onclick="deleteUser(${produto.id})">Saida</i></button>
+                  <button type="button" class="btn btn-sm btn-primary w-10" onclick="mostrarProdutoModal(${produto.id})">Ações</i></button>
                 </td>
               </tr>
               `)
@@ -77,3 +76,47 @@ const listProduct = () => {
           // <button type="button" class="btn btn-sm btn-${usuario.status == 1 ? 'success' : 'danger'}">${usuario.status == 1 ? 'Sim' : 'Não'}</button>
   }
 
+  const mostrarProdutoModal = (id) => {
+
+    const result = fetch('backend/listarProdutoPeloId.php', {
+      method: 'POST',
+      body: `id=${id}`,
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    })
+    .then((response)=> response.json())
+    .then((result)=> {
+
+
+      if (result.retorno) {
+        $('#id-produto-acao').val(result.dados.id)
+        $('#edit-action-name').val(result.dados.produto)
+  
+        const myModal = new bootstrap.Modal(document.getElementById('action-product-modal'))
+  
+        myModal.show();
+      }
+    })
+  }
+
+  const salvarModal = () =>{
+      let dados = new FormData($('#form-action-product')[0]) 
+
+      const result = fetch('backend/adicionarOperacao.php',{
+        method :'POST',
+        body: dados
+
+      })
+      .then((response)=> response.json())
+      .then((result)=> {
+
+      })
+  }
+
+  const fechaModal = () =>{
+    
+    const myModal = new bootstrap.Modal(document.getElementById('action-product-modal'))
+  
+        myModal.hide();
+  }
