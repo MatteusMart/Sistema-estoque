@@ -110,13 +110,16 @@ const listProduct = () => {
       })
       .then((response)=> response.json())
       .then((result)=> {
+        Swal.fire({
+          title:'Atenção',
+          text: result.mensagem,
+          icon: result.retorno == 'ok' ? 'success' : 'error'
+        })
+
+        result.retorno == 'ok' ? 'cadastro adicionado' : 'cadastro deu bosta'
+
+        result.retorno == 'ok' ? listProduct() : ''
 
       })
   }
 
-  const fechaModal = () =>{
-    
-    const myModal = new bootstrap.Modal(document.getElementById('action-product-modal'))
-  
-        myModal.hide();
-  }

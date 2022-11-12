@@ -84,10 +84,6 @@
                   <label for="codigo">codigo</label>
                   <input class="cadastro-input" type="text" id="codigo" name="codigo">
               </div>
-              <div>
-                  <label for="quantidade">Quantidade</label>
-                  <input class="cadastro-input" type="text" id="estoque" name="estoque">
-              </div>
             </div>
 
             <div class="text-center">
@@ -118,6 +114,12 @@
               </div>
           </div>
         </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
 
         <div class="modal fade" id="action-product-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -155,14 +157,15 @@
                   </div>
                   
                   <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="fechaModal()">Fechar</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Fechar</button>
                       <button type="button" id="form-button-action" class="btn btn-primary" onclick="salvarModal()">Salvar</button>
                   </div>
               </div>
           </div>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
           
     <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
